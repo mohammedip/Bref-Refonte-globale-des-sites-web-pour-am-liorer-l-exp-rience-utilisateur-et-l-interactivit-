@@ -1,29 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" href="style.css">
-    
-    <title>Home</title>
-</head>
-
-<body>
-    <!-- header -->
-    <header class="header-content">
-        <!DOCTYPE html>
-        <html lang="en">
-          <head>
+    <head>
             <meta charset="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <title>Document</title>
-            <link rel="stylesheet" href="style-blog-test.css" />
+            <link rel="stylesheet" href="style.css" />
             <link
               rel="stylesheet"
               href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -32,34 +14,35 @@
               referrerpolicy="no-referrer"
             />
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-          </head>
-          <body>
-            <div class="page-wrapper">
-              <div class="nav-wrapper">
-                <nav class="navbar">
-                  <img
-                
-                    src="assets/images/home/logo.png"
-                  />
-                  <div class="menu-toggle" id="mobile-menu">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                  </div>
-                  <ul class="nav no-search">
-                    <li class="nav-item"><a href="#">Home</a></li>
-                    <li class="nav-item"><a href="#">destination</a></li>
-                    <li class="nav-item"><a href="#">blog</a></li>
-                    <li class="nav-item"><a href="#">contact</a></li>
-                    <li class="nav-item active"><a href="#">login</a></li>
-                  </ul>
-                </nav>
-              </div>
-            </div>
-            <script src="scrippt.js"></script>
-        </body>
-        </html>
-    </header>
+    </head>
+    <body>
+            <!-- header -->
+        <header class="header-content">
+                <div class="page-wrapper">
+                <div class="nav-wrapper">
+                    <nav class="navbar">
+                    <img
+                    
+                        src="assets/images/home/logo.png"
+                    />
+                    <div class="menu-toggle" id="mobile-menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <ul class="nav no-search">
+                        <li class="nav-item"><a href="#">Home</a></li>
+                        <li class="nav-item"><a href="#">destination</a></li>
+                        <li class="nav-item"><a href="#">blog</a></li>
+                        <li class="nav-item"><a href="#">contact</a></li>
+                        <li class="nav-item active"><a href="#">login</a></li>
+                    </ul>
+                    </nav>
+                </div>
+                </div>
+               
+            
+        </header>
 
     <section class="hero-section" >
         
@@ -70,25 +53,28 @@
                 </p>
             </div>
             
-            <form class="hero-section-bar-search">
-                    <p class="hero-section-bar-search-title">Choose your dream trip</p>
-                    <label>Destination</label>
-                    
-                        <select name="contrys" class="contrys"  >
-                            <option value="paris" >Paris</option>
-                            <option value="madrid">Madrid</option>
-                            <option value="new york">New York</option>
-                            <option value="dubai">Dubai</option>
-                        </select>
-                
-                    <label>Trip Duration</label>
-                    <div class="duration">
-                        <input type="date"  name="start-date" class="duration-bar">
-                        <input type="date"  name="end-date" class="duration-bar" >
+            <form class="hero-section-search-bar">
+                    <p class="hero-section-search-bar-title">Choose your dream trip</p>
+                    <div class="search-bar">
+                        <label>Destination</label>
+                            <select name="contrys" class="contrys"  >
+                                <option value="paris" >Paris</option>
+                                <option value="madrid">Madrid</option>
+                                <option value="new york">New York</option>
+                                <option value="dubai">Dubai</option>
+                            </select>
                     </div>
-                    <button>Start Search</button>
+                    <div class="">
+                        <label>Trip Duration</label>
+                        <div class="duration">
+                            <input type="date"  name="start-date" class="duration-bar">
+                            <input type="date"  name="end-date" class="duration-bar" >
+                        </div>
+                    </div>
+                    <div class="search-bar-button">
+                        <button >Start Search</button>
+                    </div>
             </form>
-        
     </section>
         <section  class="discover">
             <p class="discover-title">Discover</p>
@@ -163,27 +149,45 @@
 
             </div>
                 <button>See all</button>
-            <section class="carrosel">
+            </section>
+            <section class="carousel">
                 <div class="testemonials">
-                    <i>0</i>
-                    <p class="testemonials-title">Mohammed Reida</p>
-                    <p class="testemonials-tag">@Mohammed_reida</p>
-                    <p class="testemonials-description">the support staff at your agency were absolutley fantastic. Only nice things things say about them- and good support goes a long way as most of us will have painfull first hand experience with </p>
+                    <div class="testemonial">
+                        <i>0</i>
+                        <p class="testemonials-title">Mohammed Reida</p>
+                        <p class="testemonials-tag">@Mohammed_reida</p>
+                        <p class="testemonials-description">the support staff at your agency were absolutley fantastic. Only nice things things say about them- and good support goes a long way as most of us will have painfull first hand experience with </p>
 
-                </div>
+                    </div>
+                    <div class="testemonial">
+                        <i>0</i>
+                        <p class="testemonials-title">Mohammed Reida</p>
+                        <p class="testemonials-tag">@Mohammed_reida</p>
+                        <p class="testemonials-description">the support staff at your agency were absolutley fantastic. Only nice things things say about them- and good support goes a long way as most of us will have painfull first hand experience with </p>
+
+                    </div>
+                    <div class="testemonial">
+                        <i>0</i>
+                        <p class="testemonials-title">Mohammed Reida</p>
+                        <p class="testemonials-tag">@Mohammed_reida</p>
+                        <p class="testemonials-description">the support staff at your agency were absolutley fantastic. Only nice things things say about them- and good support goes a long way as most of us will have painfull first hand experience with </p>
+
+                    </div>
+                 </div>
             </section>
 
-            <section class="contact" >
-                <div class="description-button">
-                    <h2>Our team is looking to hear from you!</h2>
-                    <p>
+            <section class="home-contact-section" >
+                <div class="home-contact-section-description-button">
+                    <p class="home-contact-section-description-button-title">Our team is looking to hear from you!</p>
+                    <p class="home-contact-section-description-button-content">
                         Wether you have a problem or need to know an information, we are all ears to hear from you. 
                     </p>
                     <button>Cantact us</button>
                 </div>
                 
-            </section>
+           
         </section>
+        
        
     <!-- footer -->
 <footer>
@@ -193,7 +197,9 @@
 </footer>
   
 
+<script src="scrippt.js">
 
+</script>
 </body>
 
 </html>
