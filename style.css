@@ -7,7 +7,9 @@
     box-sizing: border-box;
 }
 .html{
-    height: 100vh;
+
+    font-size: 10px;
+    font-family: 'poppins',sans-serif;
 
 }
 .page-wrapper {
@@ -235,7 +237,7 @@ align-items: center;
 background-repeat: no-repeat;
 width: 100%;
 height: 90vh;
-flex-direction: column;
+
 
 }
 
@@ -374,5 +376,178 @@ background-size: cover;
 }
 
 /*------------------------------------------------------index style end-----------------------------------------------*/
+/*------------------------------------------------------Sign up style start-----------------------------------------------*/
+.sign-up{
+    display: flex;
+  
+    justify-content: center;
+    align-items: center;
+   
+   
+}
+.sign-up-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 34.2rem;
+    height: 31.6rem;
+    border: 0.15rem solid #DCDCEB;
+    margin-top: 4rem ;
+    margin-bottom: 8rem ;
+    border-radius: 3.2rem;
+}
+.sign-up-form h3{
 
+    font-size: 48px;
+    padding: 2rem;
+}
+.sign-up-form input {
+    width: 80%;
+    height: 3.2rem;
+    padding: 1.2rem 1.2rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+  
+    font-weight: 400;
+    border: none;
+    background-color: #EFEFEF;
+    font-size: 12px;
+   
+   
+}
+
+#form-button1{
+    color: white;
+    background-color: rgba(247, 127, 0, 1);
+    font-size: 20px;
+    
+}
+#form-button2{
+    color: rgba(247, 127, 0, 1);
+    background-color: white;
+    border: 1px solid rgba(247, 127, 0, 1);
+    font-size: 20px;
+    
+}
+
+
+/*------------------------------------------------------Sign up style end-----------------------------------------------*/
+/*------------------------------------------------------fouter style start-----------------------------------------------*/
+.footer-container {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1120px;
+    gap: 2.4rem;
+    font-size: 1.6rem;
+    
+    margin: 0 auto;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 1.6rem;
+
+}
+
+.footer-container li, .footer-container a{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+
+}
+
+.footer-container li :hover, .footer-container a :hover{
+    font-weight:  600;
+}
+
+.footer-first-section{
+    order: 4;
+    
+}
+
+.footer-sections {
+    /* background-color: yellow; */
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+  /* flex-grow: 1; */
+}
+
+.footer-sections h4{
+font-size: 2rem;
+}
+
+.footer-email-section {
+    display: flex;
+    height: 5rem;
+    padding: 0.8rem;
+    box-shadow: inset 0 0 0 0.3rem orange;
+    border-radius: 0.8rem;
+    
+    
+  }
+  
+  .footer-email-input {
+    width: 80%;
+    flex-grow: 1;
+    /* all properties of inputs and buttons  */
+    border: none;
+    padding: .8rem;
+    margin: 0;
+    background: none;
+    box-shadow: none;
+    outline: none;
+    font: inherit;
+    color:inherit;
+    /* finished all properties of inputs and buttons */
+    font-size: 1.6rem;
+  }
+  .footer-email-button {
+    height: 100%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: none;
+    padding: .8rem;
+    margin: 0;
+    background-color: orange;
+    box-shadow: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    align-content: center;
+    text-align: center;
+  }
+  
+
+  .fa-brands{
+    /* background-color: yellow; */
+    font-size: 2.4rem;
+  }
+
+  @media screen and (min-width:768px) {
+    
+    .footer-container {
+        /* background-color: red; */
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        max-width: 1200px;
+        gap: 2.4rem;
+        font-size: 1.6rem;
+        
+        margin: 0 auto;
+        text-decoration: none;
+        list-style-type: none;
+        padding: 1.6rem;
+    
+    }
+    .footer-first-section{
+        order: 0;
+        
+    }
+    
+  }
+/*------------------------------------------------------fouter style end-----------------------------------------------*/
   
