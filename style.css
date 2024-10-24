@@ -1,7 +1,229 @@
+
+/*-------------------------------------index style start---------------------------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .html{
     height: 100vh;
 
 }
+.page-wrapper {
+    width: 100%;
+    height: auto;
+  }
+  
+  .nav-wrapper {
+    width: 90%;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 100;
+    margin: auto;
+    border-radius: 10px;
+  }
+  
+  .grad-bar {
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    -webkit-animation: gradbar 15s ease infinite;
+    -moz-animation: gradbar 15s ease infinite;
+    animation: gradbar 15s ease infinite;
+  }
+  
+  /* NAVIGATION */
+  
+  .navbar {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    height: 5rem;
+    overflow: hidden;
+    background-color: #ffffff;
+    /* margin-top: 1rem; */
+    /* padding: 10px 3rem; */
+  }
+  
+  .navbar img {
+    height: 7rem;
+    width: auto;
+    justify-self: start;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-self: end;
+  }
+  
+  .nav-item a {
+    color: #000;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-decoration: none;
+    transition: color 0.3s ease-out;
+  }
+  
+  .nav-item a:hover {
+    color: #3498db;
+  }
+  .navbar{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    /* padding: 0.5 rem; */
+    margin-top: 1rem;
+    border-radius: 30px;
+  }
+  .navbar ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    margin-right: 2rem;
+  }
+  .navbar ul li a{
+    text-transform: capitalize;
+  }
+   .active{
+    /* background-color: red; */
+    border-radius: 12px;
+    border: 1px solid blue;
+    text-align: center;
+    padding: 7px 10px;
+  }
+  /* ------------------------------------------------------ 
+  */
+  .menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #3f3f3f;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .menu-toggle {
+    justify-self: end;
+    margin-right: 25px;
+    display: none;
+  }
+  
+  .menu-toggle:hover {
+    cursor: pointer;
+  }
+  
+  #mobile-menu.is-active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  #mobile-menu.is-active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+    -ms-transform: translateY(8px) rotate(45deg);
+    -o-transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  #mobile-menu.is-active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    -ms-transform: translateY(-8px) rotate(-45deg);
+    -o-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
+  /* KEYFRAME ANIMATIONS */
+  
+  @-webkit-keyframes gradbar {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @-moz-keyframes gradbar {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes gradbar {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* 00000000000000000000000000000000000000000 */
+  @media only screen and (max-width: 720px) {
+    /* MOBILE NAVIGATION */
+  
+    .navbar ul {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      justify-content: start;
+      top: 70px;
+      background-color: #000000c1;
+      width: 90%;
+      height: max-content;
+      padding-bottom: 2rem;
+      transform: translate(-120%);
+      text-align: center;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+  
+    .navbar li {
+      padding: 1rem 5rem;
+    }
+    .navbar li:hover{
+      border-bottom: 1px solid orange;
+    }
+    .navbar li:first-child {
+      margin-top: 50px;
+    }
+    .navbar li:hover:last-child {
+      border: none;
+    }
+    .navbar li a {
+      font-size: 1rem;
+      color: white;
+    }
+  
+    .menu-toggle,
+    .bar {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .mobile-nav {
+      transform: translate(0%) !important;
+    }
+  }
+  
 
 .hero-section{
 background-image: url("./assets/images/home/desktop/HOMEBANNER-desktop.png");
@@ -32,7 +254,7 @@ flex-direction: column;
 font-size: 16px; 
   }
 
-.hero-section-bar-search{
+.hero-section-search-bar{
 display: flex;
 flex-direction: column;
 width: 70%;
@@ -43,16 +265,24 @@ border-radius: 10px;
 
 
 }
-.hero-section-bar-search label{
+.hero-section-search-bar label{
 font-size: 12px;
 }
 
-.hero-section-bar-search-title{
+.hero-section-search-bar-title{
     text-align: center; 
     font-size: medium;
     font-size: 20px;
 
-
+}
+.search-bar{
+    display: flex;
+    flex-direction: column;
+}
+.search-bar-button{
+    display: flex;
+  
+    justify-content: center;
 }
 .duration{
 display: flex;
@@ -77,7 +307,7 @@ border-radius: 20%;
     margin-bottom: 10px;
 }
 .discover{
-    display: flex;
+    display: grid;
 flex-direction: column;
 text-align: center;
 align-items: center;
@@ -109,8 +339,7 @@ align-items: center;
    
 }
 .Destinations-img{
-width: 16.9rem;
-height: 16.9rem;
+
 background-image: url("./assets/images/home/desktop/IMG7-desktop.png");
 background-size: cover;
 }
@@ -123,3 +352,27 @@ background-size: cover;
    width: 70%;
    border: 1px solid black;
 }
+.home-contact-section-description-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    
+    text-align: center;
+    background-color: rgba(217, 217, 217, 1);
+    height: max-content;
+    
+}
+.home-contact-section-description-button-title{
+   width: 60%;
+   font-size: 32px;
+   
+}
+.home-contact-section-description-button-content{
+   width: 70%;
+   font-size: 16px;
+   
+}
+
+/*------------------------------------------------------index style end-----------------------------------------------*/
+
+  
