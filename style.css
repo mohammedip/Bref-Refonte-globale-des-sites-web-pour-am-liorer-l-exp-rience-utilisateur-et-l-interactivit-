@@ -1284,7 +1284,6 @@ border: 1px solid black;
     max-width: 1120px;
     gap: 2.4rem;
     font-size: 1.6rem;
-    
     margin: 0 auto;
     text-decoration: none;
     list-style-type: none;
@@ -1426,8 +1425,8 @@ font-size: 2rem;
   height: 400px;
   border: 1px solid #ccc;
   margin-right: 10px;
-  background-color: #007bff;
-  color: white;
+  background-color: #D9D9D9;
+  color: rgb(0, 0, 0);
   font-weight: bold;
   border-radius: 5px;
   transition: background-color 0.3s ease;
@@ -1471,7 +1470,6 @@ body {
   text-align: center;
   transform: translatex(-50%);
   z-index: 1000;
-
   list-style: none;
   text-align: center;
 }
@@ -1552,7 +1550,7 @@ body {
   color: #fff;
   border-radius: 3px;
   text-decoration: none;
-  background-color: #ff4081;
+  background-color: var(--button-bakcground);
 }
 
 .slide-image img {
@@ -1609,3 +1607,233 @@ body {
     transform: translatex(100%);
   }
 }
+}
+
+
+/* style ----------------------------------------------------of card in homeeeeeeeeeeeeeeeeeeeeeeeeeeeeee */
+
+.destinations-cards-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+  /* background-color: rgb(255, 11, 11); */
+  padding: 1.6rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.destination-card {
+  display: flex;
+  padding: 1.6rem;
+  /* background-color: blue; */
+  gap: 1.6rem;
+  height: max-content;
+  width: 100%;
+  border-radius: 1.2rem;
+  box-shadow: inset 0 0 0 0.15rem #737373;
+  /* max-width: 36.1rem; */
+}
+
+.destination-card-thumbnail {
+  /* background-color: beige; */
+  width: 50%;
+  /* aspect-ratio: 1; */
+  /* max-width: 16.9rem; */
+  border-radius: 0.4rem;
+}
+.destination-card:nth-of-type(1) .destination-card-thumbnail{
+  background-image: url(assets/images/destinations/desktop/img1des.jpg);
+  background-size: cover;
+}
+.destination-card:nth-of-type(2) .destination-card-thumbnail{
+  background-image: url(assets/images/destinations/desktop/img2des.jpg);
+  background-size: cover;
+}
+.destination-card:nth-of-type(3) .destination-card-thumbnail{
+  background-image: url(assets/images/destinations/desktop/img3des.jpg);
+  background-size: cover;
+}
+.destination-card:nth-of-type(4) .destination-card-thumbnail{
+  background-image: url(assets/images/destinations/desktop/img4des.jpg);
+  background-size: cover;
+}
+/* .onen {
+  background-image: url(assets/images/destinations/desktop/img1des.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+} */
+
+.two {
+  background-image: url(assets/images/destinations/desktop/img2des.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.destination-card-information {
+  width: 50%;
+}
+.destination-card-information .destination-card-title {
+  font-size: 2rem;
+  font-weight: 600;
+  width: 100%;
+}
+
+.destination-card-information p {
+  font-size: 1rem;
+  max-width: 100%;
+}
+
+.destination-card-information .destination-card-button {
+  border: none;
+  margin: 0.8rem 0;
+  background: none;
+  box-shadow: none;
+  outline: none;
+  font-family: "poppins";
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  border-radius: 0.8rem;
+  padding: 1rem 1.6rem;
+  background-color: #f77f00;
+}
+
+@media screen and (min-width: 768px) {
+ 
+  /* .transparent-frame * {
+    display: flex;
+    width: 100%;
+  } */
+
+  .destinations-cards-area {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* background-color: rgba(0, 255, 179, 0.829); */
+    width: 100%;
+    gap: 3.2rem;
+  }
+  .destination-card-information p {
+    font-size: 1.2rem;
+    max-width: 100%;
+  }
+  .destination-card-information .destination-card-title {
+    font-size: 2.8rem;
+  }
+  .destination-card-information .destination-card-button {
+    font-size: 1.6rem;
+  }
+
+  .destination-card {
+    width: 100%;
+    max-width: 49rem;
+  }
+
+  .image-holder h4 {
+    font-size: 4.8rem;
+  }
+
+  .image-holder p {
+    font-size: 2.8rem;
+  }
+
+  .transparent-frame {
+    flex-direction: row;
+    max-width: 86.8rem;
+  }
+  
+  .transparent-frame form{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.OptionsD{
+    max-width: 250px;
+}
+
+.start-search-button{
+    margin-top: 2rem;
+}
+
+}
+
+
+
+
+.plsces-collection{
+  width: 100%;
+  height: 80vh;
+  /* background-color: #bda7a7; */
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .plsces-collection .place-collection{
+  padding: 3rem;
+  width: 70%;
+  height: max-content;
+  background-color: #726161;
+  margin-top: 3rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+*/
+.place-collection{
+  width:90%;
+  height: 90%;
+  /* background-color: red; */
+  grid-row: 1/-1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+} 
+ .place-card{
+  width: 30%;
+  height: 40%;
+  /* background-color: rgb(191, 255, 0); */
+  border-radius: 1.6rem;
+ }
+ .place-card:nth-child(1){
+  background-image: url(assets/images/home/desktop/IMG1-desktop.png);
+  background-size: cover;
+  background-position: center;
+ }
+ .place-card:nth-child(2){
+  background-image: url(assets/images/home/desktop/IMG2-desktop.png);
+  background-size: cover;
+  background-position: center;
+ }
+ .place-card:nth-child(3){
+  background-image: url(assets/images/home/desktop/IMG3-desktop.png);
+  background-size: cover;
+  background-position: center;
+ }
+ .place-card:nth-child(4){
+  background-image: url(assets/images/home/desktop/IMG4-desktop.png);
+  background-size: cover;
+  background-position: center;
+ }
+ .place-card:nth-child(5){
+  background-image: url(assets/images/home/desktop/IMG5-desktop.png);
+  background-size: cover;
+  background-position: center;
+ }
+ .place-card:nth-child(6){
+  background-image: url(assets/images/home/desktop/IMG6-desktop.png);
+  background-size: cover;
+  background-position: center;
+ }
+ .place-card:nth-child(7){
+  background-image: url(assets/images/home/desktop/IMG7-desktop.png);
+  background-size: cover;
+  background-position: center;
+ }
