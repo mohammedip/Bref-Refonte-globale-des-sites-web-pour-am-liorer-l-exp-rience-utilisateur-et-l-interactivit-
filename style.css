@@ -99,7 +99,7 @@ width: 25%;
     padding: 0.8rem;
     box-shadow: inset 0 0 0 0.3rem #1daeff;
     border-radius: 0.8rem;
-    
+    align-items: center;
   }
   
   .footer-email-input {
@@ -1355,7 +1355,8 @@ font-size: 2rem;
     font-size: 1.6rem;
   }
   .footer-email-button {
-    height: 100%;
+    height: 2rem;
+    width: 2rem;
     aspect-ratio: 1;
     border-radius: 50%;
     border: none;
@@ -1840,3 +1841,450 @@ body {
   background-size: cover;
   background-position: center;
  }
+.place-card{
+transition: .9s;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.title-country{
+  font-size: 6.2rem;
+  font-family: myBlogFont;
+  color: var(--button-bakcground);
+  opacity: 0;
+  transition: .9s;
+}
+ .place-card:hover{
+  transform: scale(1.05);
+  filter: brightness(80%);
+ }
+ .place-card:hover .title-country{
+  opacity: 100%;
+  z-index: 999;
+text-shadow: 10px 10px 10px rgb(0, 0, 0),
+10px 10px 10px rgb(0, 0, 0),
+10px 10px 10px rgb(0, 0, 0);
+ }
+@media  screen and (max-width:720px) {
+  body{
+    height: max-content;
+  }
+  .place-collection{
+    height: 200vh;
+  }
+  .plsces-collection{
+    background-color: rgb(0, 255, 21);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .place-card{
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+}
+
+
+
+
+ .image-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  height: 41.1rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(assets/images/destinations/mobile/destinations\ mobile\ photo.png);
+  /* background-color: red; */
+  padding: 0 1.6rem;
+}
+
+.search-destination,input{
+    padding: 1.6rem;
+    font-family: 'poppins';
+    border-radius: 0.8rem;
+}
+
+.start-date{
+    padding: 1.6rem;
+    font-family: 'poppins';
+    border-radius: 0.8rem 0rem 0rem 0.8rem;
+}
+
+.end-date{
+    font-family: 'poppins';
+    border-radius: 0rem 0.8rem 0.8rem 0rem;
+}
+
+
+/* .image-holder::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 41.1rem;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+    border-radius: inherit;
+} */
+
+.image-holder-typography {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-holder * {
+  z-index: 4;
+}
+
+.image-holder h4 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  /* z-index: 3; */
+}
+
+.image-holder p {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.transparent-frame {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.5);
+  height: auto;
+  width: 100%;
+  max-width: 36rem;
+  border-radius: 1.2rem;
+  padding: 1.6rem 3.6rem;
+}
+
+.transparent-frame * {
+  display: block;
+  width: 100%;
+}
+
+.transparent-frame label {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 0.4rem;
+}
+
+.transparent-frame input,
+.transparent-frame select {
+  height: 4.8rem;
+  margin: 0 0 1.2rem 0;
+}
+
+.date-selection {
+  display: flex;
+  /* width: auto; */
+  /* background-color: red; */
+}
+.date-selection input {
+  width: 50%;
+}
+
+.start-search-button {
+  border: none;
+  height: 4.8rem;
+  margin: 0.8rem 0;
+  background: none;
+  box-shadow: none;
+  outline: none;
+  font-family: "poppins";
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: white;
+  border-radius: 0.8rem;
+  background-color: #f77f00;
+  cursor: pointer;
+}
+
+.destinations-cards-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+  /* background-color: rgb(255, 11, 11); */
+  padding: 1.6rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.destination-card {
+  display: flex;
+  padding: 1.6rem;
+  /* background-color: blue; */
+  gap: 1.6rem;
+  height: max-content;
+  width: 100%;
+  border-radius: 1.2rem;
+  box-shadow: inset 0 0 0 0.15rem #737373;
+  transition: .5s;
+  /* max-width: 36.1rem; */
+}
+
+.destination-card:hover{
+  background-color: #000;
+  color: aqua;
+}
+
+.destination-card-thumbnail {
+  /* background-color: beige; */
+  width: 50%;
+  /* aspect-ratio: 1; */
+  /* max-width: 16.9rem; */
+  border-radius: 0.4rem;
+  transition: .9s;
+}
+
+
+.one {
+  background-image: url(assets/images/destinations/mountain\ hike.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.two {
+  background-image: url(assets/images/destinations/sahara\ nights.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.destination-card-information {
+  width: 50%;
+}
+.destination-card-information .destination-card-title {
+  font-size: 2rem;
+  font-weight: 600;
+  width: 100%;
+}
+
+.destination-card-information p {
+  font-size: 1rem;
+  max-width: 100%;
+}
+
+.destination-card-information .destination-card-button {
+  border: none;
+  margin: 0.8rem 0;
+  background: none;
+  box-shadow: none;
+  outline: none;
+  font-family: "poppins";
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  border-radius: 0.8rem;
+  padding: 1rem 1.6rem;
+  background-color: #f77f00;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    /* background-color: #0dda85; */
+  }
+  /* .transparent-frame * {
+    display: flex;
+    width: 100%;
+  } */
+
+  .destinations-cards-area {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* background-color: rgba(0, 255, 179, 0.829); */
+    width: 100%;
+    gap: 3.2rem;
+  }
+  .destination-card-information p {
+    font-size: 1.2rem;
+    max-width: 100%;
+  }
+  .destination-card-information .destination-card-title {
+    font-size: 2.8rem;
+  }
+  .destination-card-information .destination-card-button {
+    font-size: 1.6rem;
+  }
+
+  .destination-card {
+    width: 100%;
+    max-width: 49rem;
+  }
+
+  .image-holder h4 {
+    font-size: 4.8rem;
+  }
+
+  .image-holder p {
+    font-size: 2.8rem;
+  }
+
+  .transparent-frame {
+    flex-direction: row;
+    max-width: 86.8rem;
+  }
+  
+  .transparent-frame form{
+    display: flex;
+    
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+.OptionsD{
+    max-width: 250px;
+}
+.start-search-button{
+max-width: 20rem;
+}
+
+
+
+.start-search-button{
+    margin-top: 2rem;
+}
+
+}
+
+
+
+
+
+.footer-container {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1120px;
+  gap: 2.4rem;
+  font-size: 1.6rem;
+  margin: 0 auto;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 1.6rem;
+
+}
+
+.footer-logo-paragraph, .footer-subscribe-paragraph, .footer-email-section{
+  width: 100%;
+  max-width:40rem;
+}
+
+.footer-container li, .footer-container a{
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+
+}
+
+.footer-container li :hover, .footer-container a :hover{
+  font-weight:  600;
+}
+
+.footer-first-section{
+  order: 4;
+  
+}
+
+.footer-sections {
+  /* background-color: yellow; */
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 1rem;
+/* flex-grow: 1; */
+}
+
+.footer-sections h4{
+font-size: 2rem;
+}
+
+.footer-email-section {
+  display: flex;
+  height: 5rem;
+  padding: 0.8rem;
+  box-shadow: inset 0 0 0 0.3rem #1daeff;
+  border-radius: 0.8rem;
+  
+  
+}
+
+.footer-email-input {
+  width: 80%;
+  flex-grow: 1;
+  /* all properties of inputs and buttons  */
+  border: none;
+  padding: .8rem;
+  margin: 0;
+  background: none;
+  box-shadow: none;
+  outline: none;
+  font: inherit;
+  color:inherit;
+  /* finished all properties of inputs and buttons */
+  font-size: 1.6rem;
+}
+.footer-email-button {
+  height: 50%;
+  width: 50%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: none;
+  padding: .8rem;
+  margin: 0;
+  background-color: #1daeff;
+  box-shadow: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  align-content: center;
+  text-align: center;
+}
+
+
+.fa-brands{
+  /* background-color: yellow; */
+  font-size: 2.4rem;
+}
+
+@media screen and (min-width:768px) {
+  
+  .footer-container {
+      /* background-color: red; */
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      max-width: 1200px;
+      gap: 2.4rem;
+      font-size: 1.6rem;
+      
+      margin: 0 auto;
+      text-decoration: none;
+      list-style-type: none;
+      padding: 1.6rem;
+  
+  }
+  .footer-first-section{
+      order: 0; 
+  }
+
+  .footer-logo-paragraph{
+      width:auto;
+   }
+  
+}
+
