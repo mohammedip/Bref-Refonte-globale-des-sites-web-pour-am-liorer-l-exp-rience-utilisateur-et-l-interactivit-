@@ -19,13 +19,17 @@ html{
     max-width: 1120px;
     gap: 2.4rem;
     font-size: 1.6rem;
-    
     margin: 0 auto;
     text-decoration: none;
     list-style-type: none;
     padding: 1.6rem;
 
 }
+
+.footer-logo-paragraph, .footer-subscribe-paragraph, .footer-email-section{
+    width: 100%;
+    max-width:40rem;
+ }
 
 .footer-container li, .footer-container a{
     list-style-type: none;
@@ -121,9 +125,12 @@ font-size: 2rem;
     
     }
     .footer-first-section{
-        order: 0;
-        
+        order: 0; 
     }
+
+    .footer-logo-paragraph{
+        width:auto;
+     }
     
   }
 
