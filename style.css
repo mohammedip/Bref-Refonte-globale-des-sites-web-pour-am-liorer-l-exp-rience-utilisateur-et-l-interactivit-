@@ -116,10 +116,11 @@ width: 25%;
   }
   .footer-email-button {
     height: 100%;
+  
     aspect-ratio: 1;
     border-radius: 50%;
     border: none;
-    padding: .8rem;
+    padding: .7rem;
     margin: 0;
     background-color: #1daeff;
     box-shadow: none;
@@ -416,6 +417,7 @@ width: 25%;
   gap: 2rem;
   justify-content: space-evenly;
   padding-top: 3rem;
+  margin-bottom: 20rem;
 }
 .main-blog .card{
   width:35.2rem;
@@ -553,7 +555,9 @@ button{
   margin: auto;
   margin-top: 3rem;
   height: 140vh;
+  height: max-content;
   font-size: 1.6rem;
+  
 }
 article{
 height: 140vh;
@@ -690,7 +694,7 @@ h2:nth-of-type(1){
   width: 90%;
   /* margin: auto; */
   /* margin-top: 3rem; */
-  height: 160vh;
+  height: max-content;
   font-size: 1.6rem;
 }
 article{
@@ -961,7 +965,74 @@ align-items: center;
     display: flex;
     flex-direction: column;
     row-gap: 16px;
+    background-color: red;
 }
+@media screen and (min-width:768px) {
+  /* .discover-imgs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 16px;
+    background-color: rgb(21, 0, 255);
+    justify-content: space-between;
+    padding: 2rem; 
+}*/
+.discover-imgs{
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, minmax(300px, 500px)); */
+  grid-template-columns: repeat(4, 200px);
+ gap: 10px 10px;
+  background-color: rgb(21, 0, 255);
+}
+
+
+/* images for discover */
+
+
+.discover-img:nth-child(1){
+  background-color: red;
+  background-image: url(assets/images/home/mobile/img1.png);
+  width: 300px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  grid-column: 1/-1;
+}
+
+.discover-img:nth-child(2){
+  background-color: red;
+  background-image: url(assets/images/home/mobile/img2.png);
+  width: 300px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.discover-img:nth-child(3){
+  background-color: red;
+  background-image: url(assets/images/home/mobile/img3.png);
+  width: 300px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.discover-img:nth-child(4){
+  background-color: red;
+  background-image: url(assets/images/home/mobile/img4.png);
+  width: 300px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+/* images for discover */
 
 .Destinations{
     display: flex;
@@ -1125,6 +1196,13 @@ border: 1px solid black;
 
 }
 
+
+
+.footer-icons-list i:hover{
+  color:var(--button-bakcground);
+}
+
+
 .footer-container li :hover, .footer-container a :hover{
     font-weight:  600;
 }
@@ -1234,6 +1312,9 @@ font-size: 2rem;
   width: 100vw;
 }
 
+.slide-text p{
+  color: black;
+}
 .slide {
   width: 100px;
   box-sizing: border-box;
