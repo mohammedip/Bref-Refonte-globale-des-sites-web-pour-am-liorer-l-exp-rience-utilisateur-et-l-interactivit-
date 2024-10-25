@@ -999,36 +999,16 @@ border-radius: 20%;
     margin-bottom: 10px;
 }
 .discover{
-  max-width: 112rem;
-  margin: auto;
-}
-.discover-title{
-    font-size: 40px;
-}
-#discover-imgs{
-display: flex;
-gap: 2rem;
-flex-wrap: wrap;
- 
-}
-
-
- 
-
-
-
-@media (max-width:720px){
-.discover{
-    display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
+    display: grid;
+flex-direction: column;
+text-align: center;
+align-items: center;
 
 }
 .discover-title{
     font-size: 40px;
 }
-#discover-imgs{
+.discover-imgs{
     display: flex;
     flex-direction: column;
     row-gap: 16px;
@@ -1100,8 +1080,6 @@ flex-wrap: wrap;
 
 
 /* images for discover */
-
-}
 
 .Destinations{
     display: flex;
